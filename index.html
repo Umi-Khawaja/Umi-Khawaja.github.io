@@ -11,9 +11,10 @@
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #e9f5f2;
         }
-        header, footer {
-            background-color: #333;
+        header {
+            background: #38b6ff;
             color: #fff;
             text-align: center;
             padding: 2em 0;
@@ -29,9 +30,14 @@
             text-decoration: none;
             margin: 0 1em;
             font-weight: bold;
+            border: 2px solid transparent;
+            padding: 0.5em 1em;
+            transition: background 0.3s, color 0.3s, border 0.3s;
         }
         nav a:hover {
-            text-decoration: underline;
+            background: #fff;
+            color: #007BFF;
+            border: 2px solid #007BFF;
         }
         section {
             padding: 2em;
@@ -40,7 +46,7 @@
         }
         .container {
             padding: 1em;
-            background: #f4f4f4;
+            background: #fff;
             margin-bottom: 2em;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -54,7 +60,7 @@
             flex-wrap: wrap;
         }
         .image-container img {
-            max-width: 100%;
+            max-width: 48%;
             border-radius: 10px;
             margin-bottom: 1em;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -62,6 +68,25 @@
         }
         .image-container img:hover {
             transform: scale(1.05);
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75em 1.25em;
+            color: #fff;
+            background: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
         }
         footer p {
             margin: 0;
@@ -76,6 +101,9 @@
             }
             .image-container {
                 flex-direction: column;
+            }
+            .image-container img {
+                max-width: 100%;
             }
         }
     </style>
@@ -95,8 +123,8 @@
         <h2>About Me</h2>
         <div class="container">
             <div class="image-container">
-                <img src="https://images.unsplash.com/photo-1580281657525-1cf0b647ab25?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Health and Pharmacy">
-                <img src="https://images.unsplash.com/photo-1580281657435-f3d5c3ebd17d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Medical Therapy">
+                <img src="https://images.unsplash.com/photo-1580281657525-1cf0b647ab25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDUwMDR8MHwxfGFsbHwxfHx8fHx8fHx8fHwxNjY4NzQ1NDc4&ixlib=rb-1.2.1&q=80&w=1080" alt="Health and Pharmacy">
+                <img src="https://images.unsplash.com/photo-1580281657435-f3d5c3ebd17d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDUwMDR8MHwxfGFsbHwxfHx8fHx8fHx8fHwxNjY4NzQ1NDc4&ixlib=rb-1.2.1&q=80&w=1080" alt="Medical Therapy">
             </div>
             <p>Hello! My name is Muhammad Umair Khawaja. I am a pharmacist by profession with a strong expertise in providing health-related solutions, including counselling on Life Style Management and Medication Therapy Management. With a passion for health and well-being, I have completed various projects focusing on Diabetes Management and Education for both Type 1 and Type 2 diabetes. Additionally, I possess skills in content writing within Health Management and Medical Science.</p>
         </div>
@@ -106,24 +134,27 @@
         <div class="container">
             <h3>Diabetes Management and Education</h3>
             <div class="image-container">
-                <img src="https://images.unsplash.com/photo-1565294124527-df14e06a6da8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Diabetes Education">
+                <img src="https://images.unsplash.com/photo-1565294124527-df14e06a6da8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDUwMDR8MHwxfGFsbHwxfHx8fHx8fHx8fHwxNjY4NzQ1NDc4&ixlib=rb-1.2.1&q=80&w=1080" alt="Diabetes Education">
             </div>
             <p>Specializing in both Type 1 and Type 2 diabetes management, I have developed educational materials and provided personalized counselling to help patients manage their condition effectively.</p>
+            <a href="#" class="btn">Learn More</a>
         </div>
     </section>
     <section id="blog">
         <h2>Blog</h2>
         <div class="container">
             <div class="image-container">
-                <img src="https://images.unsplash.com/photo-1532601234-e66037286f56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Health Blog">
+                <img src="https://images.unsplash.com/photo-1532601234-e66037286f56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDUwMDR8MHwxfGFsbHwxfHx8fHx8fHx8fHwxNjY4NzQ1NDc4&ixlib=rb-1.2.1&q=80&w=1080" alt="Health Blog">
             </div>
             <p>Welcome to my blog where I share insights and information on health management and medical science. Stay tuned for articles and updates!</p>
+            <a href="#" class="btn">Read More</a>
         </div>
     </section>
     <section id="contact">
         <h2>Contact</h2>
         <div class="container">
-            <p>If you would like to get in touch, please email me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+            <p>If you would like to get in touch, please email me at <a href="mailto:m.umairkh4500@gmail.com">m.umairkh4500@gmail.com</a>.</p>
+            <p>Phone: <a href="tel:+923058727687">+923058727687</a></p>
         </div>
     </section>
     <footer>
