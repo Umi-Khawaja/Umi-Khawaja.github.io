@@ -79,6 +79,7 @@
             transition: background-color 0.3s ease;
             text-decoration: none;
             display: inline-block;
+            margin: 0.5em 0;
         }
         button:hover {
             background-color: #45a049;
@@ -113,7 +114,17 @@
                 margin: 0 0 1em 0;
             }
         }
+        .button-container {
+            display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
     </style>
+    <script>
+        function showAlert() {
+            alert("Button clicked!");
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -160,10 +171,12 @@
     <section id="contact">
         <h2>Contact</h2>
         <div class="container">
-            <p>If you would like to get in touch, please email me at <a href="mailto:m.umairkh4500@gmail.com">m.umairkh4500@gmail.com</a>.</p>
+            <div class="button-container">
+                <a href="mailto:m.umairkh4500@gmail.com"><button>Email Me</button></a>
+                <a href="https://wa.me/923058727687" target="_blank"><button>WhatsApp</button></a>
+            </div>
+            <p>Email: <a href="mailto:m.umairkh4500@gmail.com">m.umairkh4500@gmail.com</a></p>
             <p>Phone: <a href="tel:+923058727687">+923058727687</a></p>
-            <a href="mailto:m.umairkh4500@gmail.com"><button>Email Me</button></a>
-            <a href="https://wa.me/923058727687" target="_blank"><button>WhatsApp</button></a>
         </div>
     </section>
     <footer>
